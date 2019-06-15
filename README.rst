@@ -19,9 +19,11 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment
 
     # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
     $ mkvirtualenv wsb-simple-flask-app
+
 - Wchodzimy do katalogu:
 
     $ cd se_hello_printer_app
+    $ make deps - alternatywa dla poniszych instalacji
     $ pip install -r requirements.txt
     $ pip install -r test_requirements.txt
 
@@ -29,7 +31,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment
 
 - Uruchamianie applikacji:
 
-    # jako zwykły program
+    # jako zwykły program (mozemy skorzystac z make run)
     $ python main.py
 
     # albo:
@@ -37,6 +39,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment
 
 - Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
 
+    $ make test - alternatywa
     $ PYTHONPATH=. py.test
     $ PYTHONPATH=. py.test  --verbose -s
 
