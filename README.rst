@@ -20,6 +20,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment
     # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
     $ mkvirtualenv wsb-simple-flask-app
 - Wchodzimy do katalogu:
+
     $ cd se_hello_printer_app
     $ pip install -r requirements.txt
     $ pip install -r test_requirements.txt
