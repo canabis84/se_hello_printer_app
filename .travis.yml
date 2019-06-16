@@ -12,4 +12,7 @@ script:
   - make docker_push
 after_success:
   - make docker_build
-  
+deploy:
+  provider: heroku
+  app: pure-hamlet-40759
+  api_key: ${HEROKU_API_KEY}
